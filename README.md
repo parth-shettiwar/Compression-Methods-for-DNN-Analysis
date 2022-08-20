@@ -30,7 +30,7 @@ Dense Matrix Matrix Multiplication (Optimized): nvcc classifier_Matrix.cu -o fp3
 Sparse Matrix Matrix Multiplication (CuSparse): nvcc cuSparse.cu -o cusparse -lcusparse.   
 Then run nvprof on the generated object: nvprof ./sparse.   
 
-III. FOLDER: knowledge-distillation-pytorch. 
+III. FOLDER: knowledge-distillation-torch. 
 * Knowledge distillation.   
 Download CIFAR10 Dataset and add to folder knowledge-distillation-pytorch/data-cifar10.   
 Load     
@@ -45,7 +45,7 @@ Copy KDModels.ipynb notebook to KD folder and run.
 * Ensemble of KD models:  
 Copy Ensemble.ipynb notebook to KD folder and run.  
 
-IV. FOLDER: lookahead_pruning. 
+IV. FOLDER: lookahead-pruning. 
 * Pruning:    
 Download CIFAR10 Dataset and add to folder lookahead_pruning/dataset. 
 python main.py --dataset cifar10 --network resnet18 --method mp. 
